@@ -1,0 +1,18 @@
+[package]
+name = "desktop_kitty"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name="image_test"
+path="src/image_test.rs"
+
+
+[features]
+default=["druid/png","druid/image", "druid/bmp"]
+
+[dependencies]
+druid = "0.7.0"
+rand = "0.8.4"
+tiny_bmp = {path = "C:\\Users\\grass\\Desktop\\codes\\Rust\\tiny_bmp"}
